@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<ImageView
+    android:id="@+id/ivsuperHero"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    tools:background="@color/black"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSuperHeroName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="superHero"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivsuperHero"/>
+    <TextView
+        android:id="@+id/tvRealname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="realName "
+        app:layout_constraintTop_toBottomOf="@id/tvSuperHeroName"
+        app:layout_constraintStart_toEndOf="@id/ivsuperHero"/>
+    <TextView
+        android:id="@+id/tvPublisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Publisher "
+        app:layout_constraintTop_toBottomOf="@id/tvRealname"
+        app:layout_constraintStart_toEndOf="@id/ivsuperHero"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
